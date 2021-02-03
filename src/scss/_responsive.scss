@@ -1,0 +1,57 @@
+@media only screen and (max-width: 1400px) {
+  nav {
+    padding: 0 5%;
+
+    .info-container {
+      padding: 0 2.5rem;
+    }
+  }
+
+  .dog-adoption {
+    padding: 0 5%;
+
+    .nav-left {
+      left: calc(5% - 18px);
+    }
+
+    .nav-right {
+      right: calc(5% - 18px);
+    }
+  }
+
+  .homepage-container {
+    padding: 0 5%;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  nav {
+    padding: 0 2.5rem;
+
+    .logo-container {
+      height: 50%;
+    }
+
+    .info-container {
+      padding-right: 0;
+    }
+
+    .social {
+      flex-direction: column-reverse;
+
+      a {
+        padding-top: .5rem;
+      }
+    }
+  }
+
+  .homepage-container {
+    flex-direction: column;
+
+    .homepage-left,
+    .homepage-right {
+      margin: 3rem 0;
+      width: 100%;
+    }
+  }
+}
