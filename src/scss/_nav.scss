@@ -1,7 +1,8 @@
 nav {
   align-items: center;
-  background-color: #181818;
-  color: #AAAAAE;
+  background-size: cover;
+  background-image: linear-gradient(215deg, var(--bg-dark) 15%, var(--bg-light) 150%);
+  color: var(--txt-light);
   display: flex;
   height: 20%;
   padding: 0 15%;
@@ -16,7 +17,7 @@ nav {
     justify-content: center;
 
     img {
-      border: solid 1px #AAAAAE;
+      border: solid 1px var(--txt-dark);
       border-radius: 5px;
       height: 80%;
     }
@@ -27,12 +28,17 @@ nav {
     padding: 0 5rem;
 
     .page-title {
-      align-items: center;
+      align-items: flex-start;
       display: flex;
+      flex-direction: column;
       font-size: 1.5rem;
       height: calc(100% - 40px);
-      justify-content: flex-start;
+      justify-content: center;
       padding: 0 30px;
+
+      h3 {
+        margin-left: 2rem;
+      }
     }
 
     .menu {
@@ -42,14 +48,16 @@ nav {
       .entry {
         align-items: center;
         border-bottom: solid 3px transparent;
+        color: inherit;
         cursor: pointer;
         display: flex;
         height: 100%;
         padding: 0 15px;
+        text-decoration: none;
         transition: border .4s;
 
         &.selected {
-          border-bottom: solid 3px #0F0;
+          border-bottom: solid 3px var(--primary);
         }
       }
     }

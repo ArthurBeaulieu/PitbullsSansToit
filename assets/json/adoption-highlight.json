@@ -1,0 +1,14 @@
+[{
+  "name": "Qwerty",
+  "type": "dog",
+  "gender": "female",
+  "age": "1 an 3 mois",
+  "breed": "Berger Australien",
+  "affinity": {
+    "dogs": "ok",
+    "cats": "ko",
+    "baby": "ok"
+  },
+  "description": "Qwerty est une adorable femelle staff croisée berger Australien. C'est la plus belle chienne de la planète!",
+  "picture": "assets/img/animals/Qwerty.jpg"
+}]

@@ -1,8 +1,0 @@
-[{
-  "name": "Qwerty",
-  "type": "dog",
-  "gender": "female",
-  "breed": "Berger Australien",
-  "affinity": ["d", "c", "b"],
-  "picture": "assets/img/animals/Qwerty.jpg"
-}]

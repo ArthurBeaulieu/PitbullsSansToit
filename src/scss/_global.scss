@@ -1,6 +1,21 @@
 :root {
-  --primary: #39B528;
-  --secondary: #FD0002;
+  --primary: #56D45B;
+  --secondary: #FF6B67;
+  --txt-light: #EEEEEF;
+  --txt-dark: #181818;
+
+  --blue: #3B5998;
+  --pink: #D86EA8;
+
+  --grey: #AAAAAE;
+  --grey-light: #E1E1E1;
+  --grey-dark: #C5C5C5;
+  --grey-alpha: rgba(155, 155, 155, .3);
+
+  --bg-light: #717070;
+  --bg-dark: #181818;
+  --bg-light-alpha: rgba(113, 112, 112, .3);  
+  --bg-dark-alpha: rgba(24, 24, 24, .3);
 }
 
 * {
@@ -11,13 +26,13 @@
 
 html, body {
   font-size: 62.5%;
-  font-family: sans-serif;
+  font-family: Segoe UI, Helvetica, sans-serif;
   height: 100vh;
   width: 100vw;
 }
 
 h1 {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
 }
 
 h2 {
@@ -44,7 +59,7 @@ a {
   color: var(--primary);
 }
 
-p, span, li, i {
+a, p, span, li, i {
   font-size: 1.4rem;
 }
 
@@ -58,6 +73,10 @@ p {
 .align-right {
   align-self: flex-end;
   text-align: right;
+}
+
+.green {
+  color: var(--primary);  
 }
 
 .red {
