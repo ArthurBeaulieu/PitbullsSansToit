@@ -1,3 +1,8 @@
+@import 'tools/global';
+@import 'tools/modal';
+@import 'tools/nav';
+@import 'tools/footer';
+
 .adopt-container {
   align-items: flex-start;
   bottom: 0;
@@ -32,6 +37,7 @@
       display: grid;
       grid-gap: 2rem;
       grid-template-columns: repeat(3, 1fr);
+      margin: 2rem 0;
 
       .dog {
         align-items: center;
@@ -42,7 +48,6 @@
         grid-gap: 1rem;
         grid-template-columns: 1fr 3fr;
         height: 100%;
-        margin: 2rem 0;
         padding: 1rem;
         width: 100%;
 
@@ -98,3 +103,5 @@
     }
   }
 }
+
+@import 'tools/responsive';

@@ -4,7 +4,11 @@ const loaders = require('./loaders');
 const plugins = require('./plugins');
 
 module.exports = {
-  entry: ['./src/js/APST.js'],
+  entry: {
+    homepage: './src/js/Homepage.js',
+    adoption: './src/js/Adoption.js',
+    aide: './src/js/Aide.js'
+  },
   module: {
     rules: [
       loaders.JSLoader,
@@ -12,7 +16,7 @@ module.exports = {
     ]
   },
   output: {
-    filename: 'apst.bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, '../../assets/dist'),
     library: 'APST', // We set a library name to bundle the export default of the class
     libraryTarget: 'window', // Make it globally available

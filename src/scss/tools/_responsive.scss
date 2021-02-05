@@ -22,6 +22,15 @@
   .credits {
     padding: 0 5%;
   }
+
+  .adopt-container {
+    .to-adopt,
+    .adopted {
+      .dogs {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 820px) {
@@ -63,6 +72,15 @@
     }
   }
 
+  .adopt-container {
+    .to-adopt,
+    .adopted {
+      .dogs {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
   .modal {
     .container .dog {
       flex-direction: column;
@@ -86,6 +104,19 @@
 
     .info-container {
       padding-left: 0;
+      width: 100%;
+
+      .page-title {
+        align-items: center;
+
+        h3 {
+          margin-left: 0;
+        }
+      }
+
+      .menu {
+        justify-content: center;
+      }
     }
   }
 }
