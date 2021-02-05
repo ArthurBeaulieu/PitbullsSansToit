@@ -4,6 +4,54 @@
 @import 'tools/footer';
 @import 'tools/adoptionHighlight';
 
+.help-container {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: calc(80% - 14rem - 5rem);
+  overflow-y: auto;
+  padding: 0 15%;
+  position: absolute;
+  text-align: justify;
+  top: calc(20% + 14rem);
+  width: 100%;
 
+  .help-entry {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 1fr 2fr;
+    margin: 3rem 0;
+    width: 100%;
+
+    &:first-child {
+      padding-top: 3rem;
+    }
+
+    &:last-child {
+      padding-bottom: 6rem;
+    }
+
+    &.right {
+      grid-template-columns: 2fr 1fr;
+    }
+
+    .help-title {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      p {
+        font-size: 2.2rem;
+        font-style: italic;
+        font-weight: bold;
+      }
+    }
+
+    .help-description p {
+      text-indent: 4rem;
+    }
+  }
+}
 
 @import 'tools/responsive';
