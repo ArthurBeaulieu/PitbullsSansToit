@@ -18,9 +18,6 @@
   width: 100%;
 
   .help-entry {
-    display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: 1fr 2fr;
     margin: 3rem 0;
     width: 100%;
 
@@ -32,23 +29,15 @@
       padding-bottom: 6rem;
     }
 
-    &.right {
-      grid-template-columns: 2fr 1fr;
+    h3 {
+      font-size: 2.2rem;
+      font-style: italic;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      text-align: center;
     }
 
-    .help-title {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-
-      p {
-        font-size: 2.2rem;
-        font-style: italic;
-        font-weight: bold;
-      }
-    }
-
-    .help-description p {
+    p {
       text-indent: 4rem;
     }
   }

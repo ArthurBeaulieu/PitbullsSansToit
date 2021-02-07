@@ -50,6 +50,21 @@
       text-align: center;
     }
 
+    .partnership {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      p {
+        font-style: italic;
+      }
+
+      img {
+        height: 3rem;
+      }
+    }
+
     .homepage-announcement {
       background: var(--grey-alpha);
       border: solid 1px var(--grey);
