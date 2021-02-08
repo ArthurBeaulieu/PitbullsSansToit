@@ -42,8 +42,13 @@
 
     .partnership {
       align-items: center;
+      background: var(--grey-alpha);
+      border: solid 1px var(--grey);
+      border-radius: 5px;
       display: flex;
       justify-content: space-between;
+      margin-bottom: 2rem;
+      padding: 1rem;
       width: 100%;
 
       p {

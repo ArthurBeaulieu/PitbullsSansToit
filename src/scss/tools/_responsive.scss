@@ -63,8 +63,19 @@
 
     .homepage-left,
     .homepage-right {
-      margin: 3rem 0;
+      margin: 0;
       width: 100%;
+    }
+
+    .homepage-left {
+      margin-bottom: 2rem;
+    }
+
+    .homepage-right {
+      .homepage-announcement,
+      .partnership {
+        width: 70%;
+      }
     }
   }
 
