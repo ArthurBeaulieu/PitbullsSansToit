@@ -1,20 +1,14 @@
 @import 'tools/global';
 @import 'tools/modal';
 @import 'tools/nav';
+@import 'tools/main';
 @import 'tools/footer';
 @import 'tools/adoptionHighlight';
 
 .homepage-container {
-  align-items: center;
-  bottom: 0;
+  align-items: flex-start;
   display: flex;
-  height: calc(80% - 14rem - 5rem);
-  overflow-y: auto;
-  padding: 0 15%;
-  position: absolute;
   text-align: justify;
-  top: calc(20% + 14rem);
-  width: 100%;
 
   .homepage-left,
   .homepage-right {
@@ -45,10 +39,6 @@
 
   .homepage-right {
     width: 30%;
-
-    .emergency {
-      text-align: center;
-    }
 
     .partnership {
       align-items: center;

@@ -1,7 +1,9 @@
 @media only screen and (max-width: 1400px) {
-  nav {
-    padding: 0 5%;
+  :root {
+    --view-padding: 0 5%;
+  }
 
+  nav {
     .info-container {
       padding: 0 2.5rem;
     }
@@ -15,12 +17,6 @@
     .nav-right {
       right: calc(5% - 18px);
     }
-  }
-
-  .homepage-container,
-  .adopt-container,
-  .credits {
-    padding: 0 5%;
   }
 
   .adopt-container {
@@ -92,7 +88,11 @@
   }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 545px) {
+  :root {
+    --nav-height: 12%;
+  }
+
   html, body {
     font-size: 50%;
   }

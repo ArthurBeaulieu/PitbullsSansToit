@@ -7,7 +7,8 @@ module.exports = {
   entry: {
     homepage: './src/js/Homepage.js',
     adoption: './src/js/Adoption.js',
-    aide: './src/js/Aide.js'
+    help: './src/js/Help.js',
+    about: './src/js/About.js'
   },
   module: {
     rules: [

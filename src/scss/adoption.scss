@@ -1,25 +1,24 @@
 @import 'tools/global';
 @import 'tools/modal';
 @import 'tools/nav';
+@import 'tools/main';
 @import 'tools/footer';
+
+main {
+  height: calc(100% - var(--nav-height) - var(--footer-height));
+  top: var(--nav-height);
+}
 
 .adopt-container {
   align-items: flex-start;
   bottom: 0;
   display: flex;
   flex-direction: column;
-  height: calc(80% - 5rem);
-  overflow-y: auto;
-  padding: 0 15%;
-  position: absolute;
   text-align: justify;
-  top: 20%;
-  width: 100%;
 
   .disclaimer {
     font-size: 1.6rem;
     margin-top: 3rem;
-    padding: 0 15%;
     text-indent: 3.2rem;
   }
 

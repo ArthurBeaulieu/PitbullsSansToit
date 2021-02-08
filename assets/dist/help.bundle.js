@@ -11,13 +11,13 @@ window.APST =
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/Homepage.js":
-/*!****************************!*\
-  !*** ./src/js/Homepage.js ***!
-  \****************************/
+/***/ "./src/js/Help.js":
+/*!************************!*\
+  !*** ./src/js/Help.js ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _scss_homepage_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/homepage.scss */ \"./src/scss/homepage.scss\");\n/* harmony import */ var _tools_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tools/Utils */ \"./src/js/tools/Utils.js\");\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\n\n\n\nvar Homepage = /*#__PURE__*/function () {\n  function Homepage() {\n    _classCallCheck(this, Homepage);\n\n    this._init();\n\n    (0,_tools_Utils__WEBPACK_IMPORTED_MODULE_1__.creditModal)();\n  }\n\n  _createClass(Homepage, [{\n    key: \"_init\",\n    value: function _init() {\n      (0,_tools_Utils__WEBPACK_IMPORTED_MODULE_1__.adoptionHighlight)();\n      (0,_tools_Utils__WEBPACK_IMPORTED_MODULE_1__.fetchJSON)('assets/json/homepage.json').then(function (json) {\n        var announcement = document.createElement('DIV');\n        announcement.classList.add('announce');\n        announcement.innerHTML = \"\\n          <h3 class=\\\"title\\\">\".concat(json.title, \"</h3>\\n          <p><i>\").concat(json.date, \"</i></p>\\n          <p class=\\\"desc\\\">\").concat(json.description, \"</p>\\n          <img src=\\\"\").concat(json.picture, \"\\\" class=\\\"dog-pp\\\" alt=\\\"\\\">\\n          <a href=\\\"\").concat(json.link, \"\\\" class=\\\"more\\\">En savoir plus...</a>\");\n        requestAnimationFrame(function () {\n          document.querySelector('#homepage-announcement').appendChild(announcement);\n        });\n      });\n    }\n  }]);\n\n  return Homepage;\n}();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Homepage);\n\n//# sourceURL=webpack://APST/./src/js/Homepage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _scss_help_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/help.scss */ \"./src/scss/help.scss\");\n/* harmony import */ var _tools_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tools/Utils */ \"./src/js/tools/Utils.js\");\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\n\n\n\nvar Help = /*#__PURE__*/function () {\n  function Help() {\n    _classCallCheck(this, Help);\n\n    this._init();\n\n    (0,_tools_Utils__WEBPACK_IMPORTED_MODULE_1__.creditModal)();\n  }\n\n  _createClass(Help, [{\n    key: \"_init\",\n    value: function _init() {\n      (0,_tools_Utils__WEBPACK_IMPORTED_MODULE_1__.adoptionHighlight)();\n    }\n  }]);\n\n  return Help;\n}();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Help);\n\n//# sourceURL=webpack://APST/./src/js/Help.js?");
 
 /***/ }),
 
@@ -61,13 +61,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/scss/homepage.scss":
-/*!********************************!*\
-  !*** ./src/scss/homepage.scss ***!
-  \********************************/
+/***/ "./src/scss/help.scss":
+/*!****************************!*\
+  !*** ./src/scss/help.scss ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://APST/./src/scss/homepage.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://APST/./src/scss/help.scss?");
 
 /***/ })
 
@@ -129,6 +129,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// module exports must be returned from runtime so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__("./src/js/Homepage.js");
+/******/ 	return __webpack_require__("./src/js/Help.js");
 /******/ })()
 .default;

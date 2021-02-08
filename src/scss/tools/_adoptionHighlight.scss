@@ -1,11 +1,11 @@
 .dog-adoption {
   background-image: linear-gradient(215deg, #F6FFF7 15%, #F7F7F7 150%);
   border-bottom: solid 1px var(--grey-alpha);
-  height: 14rem;
+  height: var(--adoption-highlight-height);
   overflow-x: auto;
   position: absolute;
   text-align: center;
-  top: 20%;
+  top: var(--nav-height);
   width: 100%;
 
   .dog {

@@ -77,8 +77,12 @@
     justify-content: center;
     padding: 2rem;
 
+    p {
+      margin-bottom: 2rem;
+    }
+
     p.desc {
-      text-indent: 1rem;
+      text-indent: 2rem;
     }
 
     .dog {

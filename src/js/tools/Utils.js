@@ -63,8 +63,9 @@ const creditModal = () => {
 
 
 const adoptionHighlight = () => {
-  fetchJSON('assets/json/adoption-highlight.json')
-    .then(animals => {
+  fetchJSON('assets/json/adoption.json')
+    .then(adoptions => {
+      const animals = getRandomElementsInArray(adoptions.adopt, (adoptions.adopt.length > 4) ? 4 : adoptions.adopt.length);
       // Fill highlighted animals to adopt
       for (let i = 0; i < animals.length; ++i) {
         const animalContainer = document.createElement('DIV');
@@ -97,6 +98,21 @@ const adoptionHighlight = () => {
         }, false);
       }
     });
+}
+
+
+const getRandomElementsInArray = (arr, n) => {
+  const result = new Array(n);
+  let len = arr.length;
+  const taken = new Array(len);
+
+  while (n--) {
+    const x = Math.floor(Math.random() * len);
+    result[n] = arr[x in taken ? taken[x] : x];
+    taken[x] = --len in taken ? taken[len] : len;
+  }
+
+  return result;
 }
 
 

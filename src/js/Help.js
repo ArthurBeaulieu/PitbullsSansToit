@@ -2,7 +2,7 @@ import '../scss/help.scss';
 import { creditModal, adoptionHighlight } from './tools/Utils';
 
 
-class Aide {
+class Help {
 
 
   constructor() {
@@ -19,4 +19,4 @@ class Aide {
 }
 
 
-export default Aide;
+export default Help;

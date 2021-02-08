@@ -1,0 +1,18 @@
+main {
+  height: calc(100% - var(--nav-height) - var(--adoption-highlight-height) - var(--footer-height));
+  overflow-y: auto;
+  padding: var(--view-padding);
+  position: absolute;
+  text-align: justify;
+  top: calc(var(--nav-height) + var(--adoption-highlight-height));
+  width: 100%;
+
+  .emergency {
+    margin: 2rem 0;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
